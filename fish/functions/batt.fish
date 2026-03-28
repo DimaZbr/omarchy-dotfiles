@@ -1,0 +1,3 @@
+function batt --wraps="cat /sys/class/power_supply/BAT*/status; printf 'Level: %s%%\\n' (cat /sys/class/power_supply/BAT*/capacity); printf 'Power: %s W\\n' (math (cat /sys/class/power_supply/BAT*/power_now) / 1000000)" --description "alias batt=cat /sys/class/power_supply/BAT*/status; printf 'Level: %s%%\\n' (cat /sys/class/power_supply/BAT*/capacity); printf 'Power: %s W\\n' (math (cat /sys/class/power_supply/BAT*/power_now) / 1000000)"
+    cat /sys/class/power_supply/BAT*/status; printf 'Level: %s%%\n' (cat /sys/class/power_supply/BAT*/capacity); printf 'Power: %s W\n' (math (cat /sys/class/power_supply/BAT*/power_now) / 1000000) $argv
+end
