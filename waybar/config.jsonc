@@ -43,10 +43,7 @@
       "3": [],
       "4": [],
       "5": [],
-      "6": [],
-      "7": [],
-      "8": [],
-      "9": [],
+
     },
   },
   "custom/omarchy": {
@@ -73,16 +70,16 @@
   },
   "clock": {
     "format": "{:L%A %H:%M}",
-    "format-alt": "{:L%d %B W%V %Y}",
+    "format-alt": "{:L%d %B W%V %Y}  ",
     "tooltip": false,
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
   },
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [""],
     "format": "{icon}",
     "format-wifi": "{icon}  {essid}",
-    "format-ethernet": "󰀂",
-    "format-disconnected": "󰤮",
+    "format-ethernet": "",
+    "format-disconnected": "󱜡",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
@@ -110,10 +107,10 @@
     },
   },
   "bluetooth": {
-    "format": "",
-    "format-off": "󰂲",
-    "format-disabled": "󰂲",
-    "format-connected": "󰂱  {device_alias}",
+    "format": "",
+    "format-off": "",
+    "format-disabled": "",
+    "format-connected": "  {device_alias}",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "omarchy-launch-bluetooth",
@@ -127,7 +124,14 @@
     "format-muted": "",
     "format-icons": {
       "headphone": "",
+      "headset": "",
+      "hands-free": "",
+      "portable": "",
+      "hdmi": "󰡁",
       "default": ["", "", ""],
+      "headphone-bluetooth": "󰥰", 
+      "headset-bluetooth": "󰋋",
+      "speaker-bluetooth": "󰓃",
     },
   },
   "group/tray-expander": {
@@ -139,7 +143,7 @@
     "modules": ["custom/expand-icon", "tray"],
   },
   "custom/expand-icon": {
-    "format": "",
+    "format": "",
     "tooltip": false,
     "on-scroll-up": "",
     "on-scroll-down": "",
@@ -166,7 +170,7 @@
     "on-click": "omarchy-voxtype-model",
   },
   "tray": {
-    "icon-size": 12,
+    "icon-size": 14,
     "spacing": 17,
   },
 }
