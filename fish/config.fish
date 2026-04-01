@@ -1,6 +1,6 @@
 set -g fish_greeting ""
 
-fastfetch -c small.jsonc
+# fastfetch -c small.jsonc
 
 function fish_prompt
     #set_color normal
