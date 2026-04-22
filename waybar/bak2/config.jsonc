@@ -50,7 +50,7 @@
     "on-click": "walker",
     "on-click-right": "omarchy-menu",
     "separate-outputs": true,
-    "max-length": 100,
+    "max-length": 40,
   },
   "custom/omarchy": {
     "format": "{}",
@@ -81,11 +81,11 @@
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
   },
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [""],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "",
-    "format-disconnected": "󰤮",
+    "format-disconnected": "󱜡",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)",
     "tooltip-format-ethernet": "Connected",
     "tooltip-format-disconnected": "Disconnected",
